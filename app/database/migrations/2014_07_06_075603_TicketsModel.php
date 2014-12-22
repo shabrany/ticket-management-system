@@ -14,14 +14,14 @@ class TicketsModel extends Migration {
 	{
 		Schema::create('tickets', function(Blueprint $table)
 		{
-	                          $table->increments('id')->unsigned();
-                                            $table->string('title');
-                                            $table->longText('description');
-                                            $table->string('project');
-                                            $table->enum('priority' ,  array('None','Normal', 'Low' ,'High' , 'Urgent'));
-                                            $table->string('url');
-                                            $table->enum('status', array('open', 'close', 'pending'));
-                                            $table->timestamps();
+	        $table->increments('id')->unsigned();
+            $table->string('title');
+            $table->longText('description');
+            $table->string('project');
+            $table->enum('priority' ,  array('None','Normal', 'Low' ,'High' , 'Urgent'));
+            $table->string('url');
+            $table->enum('status', array('open', 'close', 'pending'));
+            $table->timestamps();
 		});
 	}
 

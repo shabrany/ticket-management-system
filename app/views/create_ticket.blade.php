@@ -3,6 +3,8 @@
 @section('page-wrapper')
 <?php
 
+$names = [];
+
 //Collecting project names
 foreach($data as $project): 
 $names[$project->project] =  $project->project;     

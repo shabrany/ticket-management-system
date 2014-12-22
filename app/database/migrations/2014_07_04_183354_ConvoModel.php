@@ -15,11 +15,11 @@ class ConvoModel extends Migration {
 		Schema::create('conversations', function(Blueprint $table)
 		{
 			$table->increments('id');
-                                                     $table->longText('message');
-                                                     $table->string('user_name');
-                                                     $table->integer('user_id');
-                                                     $table->integer('ticket_id');
-                                                     $table->timestamps();
+			$table->longText('message');
+			$table->string('user_name');
+			$table->integer('user_id');
+			$table->integer('ticket_id');
+			$table->timestamps();
 		});
 	}
 
